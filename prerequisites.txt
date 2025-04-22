@@ -1,0 +1,6 @@
+jupyterlab
+
+mkdocs
+mkdocs-material
+mkdocs-redirects
+mkdocs-minify-plugin
