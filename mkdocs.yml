@@ -1,6 +1,7 @@
 site_name: Electronics Pocketbook
 
 repo_url: https://github.com/YePererva/electronics_pocketbook
+site_url: https://yepererva.github.io/electronics_pocketbook/
 
 docs_dir: docs/content
 custom_dir: overrides
