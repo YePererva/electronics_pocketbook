@@ -2,5 +2,10 @@ jupyterlab
 
 mkdocs
 mkdocs-material
+mkdocs-material-extensions
 mkdocs-redirects
 mkdocs-minify-plugin
+
+pymdown-extensions  
+
+mkdocs-git-revision-date-localized-plugin

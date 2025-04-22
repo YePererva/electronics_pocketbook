@@ -1,14 +1,101 @@
-site_name: Electronics Pocketbook
-
-repo_url: https://github.com/YePererva/electronics_pocketbook
-site_url: https://yepererva.github.io/electronics_pocketbook/
+INHERIT: mkdocs_credentials.yml
 
 docs_dir: docs/content
-custom_dir: overrides
 
 theme:
   name: material
+  
   font:
     text: Roboto
     code: Roboto Mono
+  
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  icon: 
+    logo: octicons/rocket-24
+  
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.indexes
+    - toc.follow
+
+  custom_dir: overrides
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
+  - offline
+
+markdown_extensions:
+  - meta
+  - attr_list
+  - md_in_html
+  - pymdownx.betterem
+  - pymdownx.blocks.caption
+  - toc:
+      permalink: true
+      separator: "_"
+  # for tasklists
+  - pymdownx.tasklist
+   
+  # for rendering tables
+  - tables
+  # for code syntax highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  # to embed text from other files
+  - pymdownx.snippets
+  # for MathJax support
+  - pymdownx.arithmatex:
+      generic: true
+  # for diagramming
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # for callouts / warnings
+  - admonition # sometimes suggested to be replaced by "pymdownx.blocks.admonition" by replacement doesn't work well!
+  - pymdownx.details
+  - footnotes
+  # for tabbed content
+  - pymdownx.tabbed:
+      combine_header_slug: true
+      alternate_style: true
+
+  # for rendering emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # - markdown_include.include
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
