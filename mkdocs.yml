@@ -17,19 +17,24 @@ theme:
         icon: material/brightness-auto
         name: Switch to light mode
 
+    
     # Palette toggle in light mode
     - media: "(prefers-color-scheme: light)"
+      primary: indigo
       scheme: default 
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-      
+
+    
     # Palette toggle in dark mode
     - media: "(prefers-color-scheme: dark)"
+      primary: indigo
       scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+
 
   icon: 
     logo: octicons/rocket-24
