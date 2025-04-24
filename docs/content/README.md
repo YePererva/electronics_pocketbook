@@ -1,5 +1,4 @@
 
-
 Structure of this "pocketbook"
 
 - Schematics
