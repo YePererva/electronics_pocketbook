@@ -63,10 +63,10 @@ Some estimated values:
 
 - for `Offset` or `Voltage at 0 °C, [V]`:
 $$ 
-Offset = V_{reference \ temperature} - \frac{T_{reference}}{Scale \ factor}
+Offset = V_{T_{ref}} - \frac{T_{ref}}{Scale \ factor}
 $$
 
 - Temperature at defined voltage:
-$$ T_{°C} = \frac{V_{input} - V_{T_{ref}}}{Scale \ factor} + T_{ref} $$
+$$ T_{°C} = \frac{V_{output} - V_{T_{ref}}}{Scale \ factor} + T_{ref} $$
 
 Calculation file is [here](calculators/linear_temperature_sensors.xlsx){:linear_temperature_sensors}
