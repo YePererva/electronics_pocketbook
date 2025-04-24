@@ -62,6 +62,8 @@ if __name__ == "__main__":
 				src_file = os.path.join(root, file)
 				render_file_name = os.path.splitext(file)[0]+'.svg'
 
+				print(render_file_name)
+
 				target_folder = root.replace(src_folder_postfix, target_folder_postfix)
 				render_file = os.path.join(target_folder, render_file_name)
 				
