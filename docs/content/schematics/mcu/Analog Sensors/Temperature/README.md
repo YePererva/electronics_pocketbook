@@ -27,7 +27,7 @@ $$
 And temperature can be calculated based on formula:
 
 $$
-T_{\degree C}=\frac{V_{input}-Offset}{Scale factor}=\frac{V_{input}-0V}{10^{-2} \frac{V}{℃}}=100 \times V_{input} \ [℃]
+T_{\\degree C}=\frac{V_{input}-Offset}{Scale factor}=\frac{V_{input}-0V}{10^{-2} \frac{V}{℃}}=100 \times V_{input} \ []
 $$
 
 ### TMP36
