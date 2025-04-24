@@ -48,6 +48,8 @@ This sensor can't be powered from 3.3V, and can provide more than 3.3V as output
 | Reference temperature, [°C]                      | $T_{ref}$     | 25           | 100          | 25          |
 | Applicable temperature range per datasheet, [°C] |               | -55 ... +150 | -20 ... +100 | -40 ... 125 |
 
+Some estimated values:
+
 |                                          | LM35 | LM45 | LM50  |
 | ---------------------------------------- | ---- | ---- | ----- |
 | Voltage at 0 °C, [V]                     | 0.0  | 0    | 0.50  |
@@ -56,6 +58,7 @@ This sensor can't be powered from 3.3V, and can provide more than 3.3V as output
 | 1.1 V                                    | 110  | 110  | 60    |
 | 1.75 V                                   | 175  | 175  | 125   |
 | 3.3 V                                    | 330  | 330  | 280   |
+
 ## Estimation formulas
 
 - for `Offset` or `Voltage at 0 °C, [V]`:
@@ -66,3 +69,4 @@ $$
 - Temperature at defined voltage:
 $$ T_{°C} = \frac{V_{input} - V_{T_{ref}}}{Scale \ factor} + T_{ref} $$
 
+Calculation file is [here](calculators/linear_temperature_sensors.xlsx){:linear_temperature_sensors}
