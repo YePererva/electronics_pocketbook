@@ -45,13 +45,21 @@ However, for encoder it also can use cascading of triggers as per TI 74HC14 Data
 
 ## Specialized IC Solution
 
+### MAX6816/6817/6818
+
+[Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/max6816-max6818.pdf)
+
+Single-IC solution for 1 / 2 or 8 channels. Need only bypass capacitor.
+
 
 ### MC14490
 
 [Datasheet](https://www.onsemi.com/pdf/datasheet/mc14490-d.pdf) from OnSemi and [Application note](https://www.bourns.com/docs/technical-documents/technical-library/sensors-controls/technical-notes/Bourns_enc_sgnl_cond_technote.pdf) from Bourns.
 
-Hex contact debounce IC that would require only 1nF capacitor for functioning.
+Similar to MAX681_, but has extra 2 pins for capacitor to "program" the filtration time. 1 nF would be sufficient for buttons and encoders.
+
+![](images/render/kicad/MC14490.svg)
 ### LogiSwitch LS30
 
 Specialized encoder (or 3-channel) debouncer
-[Datasheet]()
+[Datasheet](https://logiswitch.com/wp-content/uploads/LS30-Rotary-Encoder-IC-Datasheet.pdf)
