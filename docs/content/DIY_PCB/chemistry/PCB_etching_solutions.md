@@ -24,6 +24,7 @@ Don't store nor reuse this solution, and don't heat above 45 °C
 	\ce{Cu + H2O2 + H3[Cit] -> H[CuCit] + H2O}
 	$$
 	
+	
 	where, $\ce{Cit}$ is short for _citrate_ $\ce{[(CH2)2C(OH)(COO)3]^3-}$. 
 
 ## Ferric Chloride

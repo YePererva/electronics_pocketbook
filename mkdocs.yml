@@ -55,7 +55,6 @@ plugins:
   - offline
 
 markdown_extensions:
-
   - attr_list
   - md_in_html
   - pymdownx.betterem
@@ -65,7 +64,6 @@ markdown_extensions:
       separator: "_"
   # for tasklists
   - pymdownx.tasklist
-   
   # for rendering tables
   - tables
   # for code syntax highlight
@@ -74,6 +72,9 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  # to enable single line break render as <br>
+  # but it breaks the bullet-lists 
+  # - markdown.extensions.nl2br : {}
   # to embed text from other files
   - pymdownx.snippets
   # for MathJax support
