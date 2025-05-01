@@ -13,7 +13,7 @@ This is Work In Progress on collecting notes for hobbyist electronics.
 
     Schematics for use either in conjugation with MCU or as individual units. Focuses mostly on 3.3 V logic modules.
 
-    [:octicons-arrow-right-24: Getting started](#)
+    [:octicons-arrow-right-24: Getting started](schematics)
 
 -   :material-pencil-ruler:{ .lg .middle } __EDA__
 
@@ -32,7 +32,7 @@ This is Work In Progress on collecting notes for hobbyist electronics.
 	- chemistry (etching, tinning, fluxes, flux washing, etc.)
 	- devices for DIY PCB (drill regulator, etc)
 
-    [:octicons-arrow-right-24: Make your own PCB](#)
+    [:octicons-arrow-right-24: Make your own PCB](DIY_PCB)
 
 -   :material-soldering-iron:{ .lg .middle } __Tools__
 
