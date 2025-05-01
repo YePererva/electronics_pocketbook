@@ -5,6 +5,7 @@ mkdocs-material
 mkdocs-material-extensions
 mkdocs-redirects
 mkdocs-minify-plugin
+mkdocs-awesome-nav
 
 pymdown-extensions  
 
