@@ -1,14 +1,9 @@
-
-
 # Chemistry
-
-
 
 ## Flux
 
-
-## PCB etching
+## PCB etching solutions
 
 ## Photoresist / Solder mask developing
 
-
+## Flux cleaners

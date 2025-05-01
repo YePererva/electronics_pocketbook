@@ -43,6 +43,10 @@ theme:
     - content.code.copy
     - content.code.annotate
     - navigation.indexes
+    #- navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
     - toc.follow
 
   custom_dir: overrides
