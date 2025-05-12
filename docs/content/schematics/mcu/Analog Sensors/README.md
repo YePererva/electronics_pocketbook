@@ -38,6 +38,17 @@ a.k.a. Voltage Follower, Unity Gain Buffer
 
 However, notice that MCP601 doesn't quite provide the output voltage near VCC region. Thus, if expecting signal near 3.3V, than power it with 5V. The schematics above is sufficient on frequencies up to approx. 250 KHz.
 
+However, if the signal is expected to be noisy, any filter should be installed prior to aattenuator:
+
+![](images/render/kicad/non-inveting-attenuator-with-low-pass.svg)
+
+It demonstrates the low-pass filter, where the cut-off frequency would be:
+
+$$
+f=\frac{1}{2\pi \times R \times C}
+$$
+
+Low-pass - passes only signals with frequencies, lower than designed. a.k.a. high-cut filter.
 ### On MCU board side
 
 While MCU might provide 12-bit ADC, to obtain better than 10-bits resolution, consider:
